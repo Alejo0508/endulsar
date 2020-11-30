@@ -1,5 +1,6 @@
 .body{
   background-color: #fffde7;
+ /* background-image: url("img/fondo.jpg"); */
 
 }
 
@@ -26,3 +27,18 @@
 .bordecarrusel{
     border: #ffeb3b  solid 2px;
 }
+
+.jumbotroncupcake{
+ background-image: url("img/jumbotroncupcake.jpg");
+  }
+
+.textjumbtroncupcake{
+    font-weight: 500;
+    margin-bottom: 80px;
+
+}
+
+.colorradio{
+    background-color: #ffeb3b;
+}
+  
