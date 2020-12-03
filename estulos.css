@@ -39,6 +39,7 @@
 }
 
 .colorradio{
-    background-color: #ffeb3b;
+    background-color: #ffeb3b !important;
+    border-color: #ff9800 !important;
 }
   

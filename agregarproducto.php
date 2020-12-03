@@ -15,7 +15,7 @@
 
     <header>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-transparent ">
+        <nav class="navbar navbar-expand-lg navbar-light bg-transparent ">
             <img src="img/Logo.png" width="60" height="60" alt="" loading="lazy">
             <a class="navbar-brand text-warning tamañotextonavbar margennavbar magenicon" href="index.html">EndulSar</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -33,88 +33,107 @@
 
     <main>
 
-    <div class="container">
+        <div class="container">
 
-    <form action="">
-        <h1>Agrega un producto</h1>
+            <form action="registrarproducto.php" method="POST">
+                <h1>Agrega un producto</h1>
 
-        <div class="row">
-                            <div class="col-6">
-                                <input type="text" class="form-control" placeholder="Nombre" name="nombrecupcake">
-                            </div>
-                            <div class="col-6">
-                                <input type="text" class="form-control" placeholder="Precio" name="preciocupcake">
-                            </div>
+                <div class="row">
+                    <div class="col-6">
+                        <input type="text" class="form-control" placeholder="Nombre" name="nombrecupcake">
+                    </div>
+                    <div class="col-6">
+                        <input type="text" class="form-control" placeholder="Precio" name="preciocupcake">
+                    </div>
+                </div>
+
+                <div class="row mt-3">
+                    <div class="col align-self-end ">
+                        <label class="font-weight-bold ">Masa: </label>
+                        <div class="form-check form-check-inline ">
+                            <input class="form-check-input" type="radio" name="masa" value="vainilla">
+                            <label class="form-check-label ">Vainilla</label>
                         </div>
-
-                        <div class="row mt-3">
-                            <div class="col align-self-end ">
-                                <label class="font-weight-bold ">Masa: </label>
-                                <div class="form-check form-check-inline ">
-                                    <input class="form-check-input " type="radio" name="genero" value="vainilla">
-                                    <label class="form-check-label ">Vainilla</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="genero" value="chocolate">
-                                    <label class="form-check-label">Chocolate</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="genero" value="naranja">
-                                    <label class="form-check-label">Naranja</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="genero" value="manzana">
-                                    <label class="form-check-label">Manzana</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="genero" value="mixto_vainilla_chocolate">
-                                    <label class="form-check-label">Mixto vainilla-chocolate</label>
-                                </div>
-                            </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="masa" value="chocolate">
+                            <label class="form-check-label">Chocolate</label>
                         </div>
-
-                        <div class="row mt-3">
-                            <div class="col align-self-end ">
-                                <label class="font-weight-bold ">Relleno: </label>
-                                <div class="form-check form-check-inline ">
-                                    <input class="form-check-input " type="radio" name="genero" value="arequipe">
-                                    <label class="form-check-label ">Arequipe</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="genero" value="nutella">
-                                    <label class="form-check-label">Nutella</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="genero" value="buttercream">
-                                    <label class="form-check-label">Buttercream</label>
-                                </div>
-                            </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="masa" value="naranja">
+                            <label class="form-check-label">Naranja</label>
                         </div>
-
-                        <div class="row mt-3">
-
-                            <div class="col">
-                                <label class="font-weight-bold">Descripción:</label>
-                                <textarea class="form-control" rows="4" name="descipcion"></textarea>
-                            </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="masa" value="manzana">
+                            <label class="form-check-label">Manzana</label>
                         </div>
-
-                        
-                        <div class="row mt-3">
-
-                            <div class="col">
-                                <label class="font-weight-bold">Foto:</label>
-                                <input type="text" class="form-control" placeholder="Foto URL" name="foto">
-                            </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="masa" value="mixto_vainilla_chocolate">
+                            <label class="form-check-label">Mixto vainilla-chocolate</label>
                         </div>
-                            <br>
-                        <button type="submit" class="btn btn-warning btn-block textjumbtroncupcake" name="botonEnvio">Registrar</button>
-                    </form>
+                    </div>
+                </div>
+
+                <div class="row mt-3">
+                    <div class="col align-self-end ">
+                        <label class="font-weight-bold ">Relleno: </label>
+                        <div class="form-check form-check-inline ">
+                            <input class="form-check-input " type="radio" name="relleno" value="arequipe">
+                            <label class="form-check-label ">Arequipe</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="relleno" value="nutella">
+                            <label class="form-check-label">Nutella</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input " type="radio" name="relleno" value="buttercream">
+                            <label class="form-check-label">Buttercream</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-3">
+
+                    <div class="col">
+                        <label class="font-weight-bold">Descripción:</label>
+                        <textarea class="form-control" maxlength="200" rows="4" name="descipcion"></textarea>
+                    </div>
                 </div>
 
 
-    </form>
-    </div>
+                <div class="row mt-3">
+
+                    <div class="col">
+                        <label class="font-weight-bold">Foto:</label>
+                        <input type="text" class="form-control" placeholder="Foto URL" name="foto">
+                    </div>
+                </div>
+                <br>
+                <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#agregar">
+                    Agregar producto
+                </button>
+
+                <div class="modal" id="agregar">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <p>Producto agregado con exito</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="submit" class="btn btn-warning btn-block textjumbtroncupcake"
+                                    name="botonEnvio">Aceptar</button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+
+
+
+        </form>
+        </div>
 
 
     </main>
