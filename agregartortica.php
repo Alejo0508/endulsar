@@ -120,7 +120,7 @@
                             </div>
                             <div class="modal-footer">
                                 <button type="submit" class="btn btn-warning btn-block textjumbtroncupcake"
-                                    name="botonEnvio">Aceptar</button>
+                                    name="enviotortica">Aceptar</button>
 
                             </div>
                         </div>

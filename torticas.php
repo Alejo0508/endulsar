@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
         integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" href="estulos.css">
-    <title>Cupcakes</title>
+    <title>Torticas</title>
     <link rel="shortcut icon" href="img/Logo.png" type="image/x-icon">
 </head>
 
@@ -33,15 +33,17 @@
 
         <div class="jumbotron jumbotron-fluid jumbotroncupcake">
             <div class="container">
-                <h1 class="display-5">Cupcakes</h1>
-                <p class="lead textjumbtroncupcake">¡HOLA!, este espacio esta dedicado a cupcakes, elije el tuyo,
+                <h1 class="display-5">Torticas</h1>
+                <p class="lead textjumbtroncupcake">¡HOLA!, este espacio esta dedicado a Torticas, elije el tuyo,
                     personaliza el sabor y resibelos en tu casa.</p>
             </div>
         </div>
 
         <div class="container">
             <div class="row justify-content-center">
-                <a class="btn btn-warning btn-lg textjumbtroncupcake" href="agregarproducto.php" role="button">Agrega un producto nuevo</a>
+
+                <a class="btn btn-warning btn-lg textjumbtroncupcake" href="agregartortica.php" role="button">Agrega un producto nuevo</a>
+
             </div>
         </div>
 
@@ -51,13 +53,13 @@
 
     $transaccion = new Basedatos();
 
-    $consultasql = "SELECT * FROM cupcake WHERE 1";
+    $consultasql = "SELECT * FROM tortica WHERE 1";
 
     $producto = $transaccion -> lista($consultasql);
 
 ?>
 
-                <h2 class="centrartitulos ">Cupcakes</h2>
+                <h2 class="centrartitulos ">Torticas</h2>
 
             <div class="container">
 
@@ -78,17 +80,17 @@
                                 <p class="card-text">Precio: <?php echo ($productos["precio"]) ?></p>
 
                                 
-                                <a href="elliminar.php?id=<?php echo($productos ["idcupcake"]) ?>"
+                                <a href="elliminar.php?id=<?php echo($productos ["idtortica"]) ?>"
                                 class="btn btn-danger">Eliminar</a>
 
                                 <button type="button" class="btn btn-danger " data-toggle="modal"
-                                    data-target="#editar<?php echo($productos ["idcupcake"]) ?>">
+                                    data-target="#editar<?php echo($productos ["idtortica"]) ?>">
                                     Editar
                                 </button>
 
                             </div>
 
-                            <div class="modal fade" id="editar<?php echo($productos ["idcupcake"]) ?>" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            <div class="modal fade" id="editar<?php echo($productos ["idtortica"]) ?>" tabindex="-1" aria-labelledby="exampleModalLabel"
                             aria-hidden="true">
                             <div class="modal-dialog">
                                 <div class="modal-content">
@@ -100,7 +102,7 @@
                                     </div>
 
                                     <div class="modal-body">
-                                        <form action="crudproducto.php?id=<?php echo($productos ["idcupcake"]) ?>" method="POST">
+                                        <form action="crudproducto.php?id=<?php echo($productos ["idtortica"]) ?>" method="POST">
 
                                             <div class="form-group">
                                                 <label>Nombre</label>
