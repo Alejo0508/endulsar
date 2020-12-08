@@ -80,7 +80,7 @@
                                 <p class="card-text">Precio: <?php echo ($productos["precio"]) ?></p>
 
                                 
-                                <a href="elliminar.php?id=<?php echo($productos ["idtortica"]) ?>"
+                                <a href="eliminartortica.php?id=<?php echo($productos ["idtortica"]) ?>"
                                 class="btn btn-danger">Eliminar</a>
 
                                 <button type="button" class="btn btn-danger " data-toggle="modal"
@@ -119,7 +119,7 @@
                                                 <input type="text" class="form-control" name="precioeditar" value="<?php echo ($productos["precio"]) ?>">
                                             </div>
 
-                                            <button type="submit" class="btn btn-info" name="botonEditar">Enviar</button>
+                                            <button type="submit" class="btn btn-info" name="botonEditartortica">Enviar</button>
 
                                         </form>
                                     </div>

@@ -63,12 +63,12 @@
     
         $transaccion -> agregarproducto($consultasql);
     
-        header("location:cupcake.php");
+        header("location:torticas.php");
     }
 
 
     
-    if (isset($_POST["botonEditar"]))
+    if (isset($_POST["botonEditartortica"]))
     {
 
 
@@ -80,12 +80,12 @@
 
         $transaccion = new Basedatos();
 
-        $consultasql = "UPDATE cupcake SET nombre='$nombre', descripcion='$descripcion', precio='$precio' WHERE idcupcake = '$id'";
+        $consultasql = "UPDATE tortica SET nombre='$nombre', descripcion='$descripcion', precio='$precio' WHERE idtortica = '$id'";
     
     
         $transaccion -> editarproducto($consultasql);
 
-        header("location:cupcake.php");
+        header("location:torticas.php");
     }
 
 
